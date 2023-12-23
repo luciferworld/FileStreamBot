@@ -1,4 +1,4 @@
-telethon==v1.33.1
+telethon
 cryptg
 quart
 uvicorn
