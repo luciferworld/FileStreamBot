@@ -19,7 +19,7 @@ async def user_file_handler(event: NewMessage.Event | Message):
 
     dl_link = f'{Server.BASE_URL}/dl/{message_id}?code={secret_code}'
     tg_link = f'{Server.BASE_URL}/file/{message_id}?code={secret_code}'
-    deep_link = f'https://t.me/{Telegram.BOT_USERNAME}?start=file_{message_id}_{secret_code}'
+    deep_link = f'https://telegram.dog/{Telegram.BOT_USERNAME}?start=file_{message_id}_{secret_code}'
 
     if (event.document and 'video' in event.document.mime_type) or event.video:
         stream_link = f'{Server.BASE_URL}/stream/{message_id}?code={secret_code}'
