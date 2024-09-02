@@ -4,16 +4,16 @@ class Telegram:
     API_ID = int(env.get("TELEGRAM_API_ID", 25184668))
     API_HASH = env.get("TELEGRAM_API_HASH", "9de2fcd18b25deed06adf855fcd181ed")
     OWNER_ID = int(env.get("OWNER_ID", 5390385209))
-    ALLOWED_USER_IDS = env.get("ALLOWED_USER_IDS", "").split()
+    ALLOWED_USER_IDS = env.get("ALLOWED_USER_IDS", "5390385209").split()
     BOT_USERNAME = env.get("TELEGRAM_BOT_USERNAME", "Liciferfiletolink_bot")
-    BOT_TOKEN = env.get("TELEGRAM_BOT_TOKEN", "6988190080:AAHc9v-B5-bd3vJ-ooKLNZ-rnv9GFogXiNI")
+    BOT_TOKEN = env.get("TELEGRAM_BOT_TOKEN", "6988190080:AAGQyZ5xtF3Sas0TKFG1GUC0WMc8UnPPb-s")
     CHANNEL_ID = int(env.get("TELEGRAM_CHANNEL_ID", -1001805072460))
     SECRET_CODE_LENGTH = int(env.get("SECRET_CODE_LENGTH", 12))
 
 class Server:
-    BASE_URL = env.get("BASE_URL", "http://filestream.lucifercloud.me:8080")
+    BASE_URL = env.get("BASE_URL", "http://142.93.224.50:8282")
     BIND_ADDRESS = env.get("BIND_ADDRESS", "0.0.0.0")
-    PORT = int(env.get("PORT", 8080))
+    PORT = int(env.get("PORT", 8282))
 
 # LOGGING CONFIGURATION
 LOGGER_CONFIG_JSON = {
